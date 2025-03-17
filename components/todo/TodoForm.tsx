@@ -17,8 +17,8 @@ const TodoForm = () => {
     };
 
   return (
-    <form onSubmit={onSubmit}>
-        <input type="text" name="todo-text" required />
+    <form onSubmit={onSubmit} className='flex w-full items-center space-x-2 bg-gray-200 p-3 rounded-md'>
+        <input type="text" name="todo-text" required placeholder='할 일을 입력하세요.' className='bg-white'/>
         <button>추가하기</button>
     </form>
   )
